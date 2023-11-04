@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BankaMusteriDataSet" targetNamespace="http://tempuri.org/BankaMusteriDataSet.xsd" xmlns:mstns="http://tempuri.org/BankaMusteriDataSet.xsd" xmlns="http://tempuri.org/BankaMusteriDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BankaMusteriConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BankaMusteriConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.BankaUygulamasi.Properties.Settings.GlobalReference.Default.BankaMusteriConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="hesaplar_tablosuTableAdapter" GeneratorDataComponentClassName="hesaplar_tablosuTableAdapter" Name="hesaplar_tablosu" UserDataComponentName="hesaplar_tablosuTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BankaMusteriConnectionString (Settings)" DbObjectName="BankaMusteri.dbo.hesaplar_tablosu" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT DOVIZ_CINSI, MIKTAR FROM dbo.hesaplar_tablosu</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DOVIZ_CINSI" DataSetColumn="DOVIZ_CINSI" />
+              <Mapping SourceColumn="MIKTAR" DataSetColumn="MIKTAR" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BankaMusteriDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="BankaMusteriDataSet" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="BankaMusteriDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="hesaplar_tablosu" msprop:Generator_RowEvHandlerName="hesaplar_tablosuRowChangeEventHandler" msprop:Generator_RowDeletedName="hesaplar_tablosuRowDeleted" msprop:Generator_RowDeletingName="hesaplar_tablosuRowDeleting" msprop:Generator_RowEvArgName="hesaplar_tablosuRowChangeEvent" msprop:Generator_TablePropName="hesaplar_tablosu" msprop:Generator_RowChangedName="hesaplar_tablosuRowChanged" msprop:Generator_UserTableName="hesaplar_tablosu" msprop:Generator_RowChangingName="hesaplar_tablosuRowChanging" msprop:Generator_RowClassName="hesaplar_tablosuRow" msprop:Generator_TableClassName="hesaplar_tablosuDataTable" msprop:Generator_TableVarName="tablehesaplar_tablosu">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DOVIZ_CINSI" msprop:Generator_ColumnPropNameInTable="DOVIZ_CINSIColumn" msprop:Generator_ColumnPropNameInRow="DOVIZ_CINSI" msprop:Generator_UserColumnName="DOVIZ_CINSI" msprop:Generator_ColumnVarNameInTable="columnDOVIZ_CINSI">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MIKTAR" msprop:Generator_ColumnPropNameInTable="MIKTARColumn" msprop:Generator_ColumnPropNameInRow="MIKTAR" msprop:Generator_UserColumnName="MIKTAR" msprop:Generator_ColumnVarNameInTable="columnMIKTAR" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
