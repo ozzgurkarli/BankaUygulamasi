@@ -1,3 +1,5 @@
+Sunum dosyası SUNUM.pptx dosyalarda mevcut.
+
 Müşteri ekranında hesaplar görüntülenebilir, hesap oluşturulabilir, döviz kurundan
 yararlanılarak farklı döviz cinsinden hesaplar arasında para transferi yapılabilir,
 güncel döviz kuru görüntülenebilir ve müşteriye ait tüm geçmiş işlemler görüntülenebilir.
